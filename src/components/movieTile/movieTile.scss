@@ -1,0 +1,80 @@
+@import '../../styles/_variables.scss';
+
+.movie-tile {
+  max-width: 250px;
+  cursor: pointer;
+  position: relative;
+  color: $primary-color;
+}
+
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-tile-genre {
+  font-size: .8rem;
+  opacity: .5;
+  margin-top: .75em;
+  color: $primary-color
+}
+
+.movie-tile-details {
+  display: flex;
+  justify-content: space-between;
+  opacity: .7;
+  padding-top: .75em;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: $primary-color;
+}
+
+.context-menu {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background: $dark-label-color;
+  border-radius: 4px;
+
+  .menu-item {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .menu-item:hover {
+    background-color: $icon-color;
+  }
+}
+
+.movie-tile-release-year {
+  border: 2px solid $dark-label-color;
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-size: .75rem;
+  color: $primary-color
+}
+
+.delete-action {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+  button {
+    background-color: $icon-color;
+    color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

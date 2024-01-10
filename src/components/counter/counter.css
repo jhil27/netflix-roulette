@@ -1,0 +1,24 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for decrement/decrement button */
+.decrement, .increment {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.increment { border-radius: 0 4px 4px 0; } 
+
+/* Style for the number in the middle */
+.number {
+    padding: 10px 20px;
+    font-size: 20px;
+}

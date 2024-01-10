@@ -1,0 +1,84 @@
+@import '../../styles/variables';
+
+.movie-details-container {
+    position: relative;
+
+    .movie-card {
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        column-gap: 32px;
+        padding: 0px 100px;
+
+        .movie-poster-details img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movie-info {
+            justify-self: start;
+            padding: 20px;
+
+            .title-rating-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .movie-title-details {
+                    font-size: 2rem;
+                }
+
+                .circle {
+                    width: 50px;
+                    height: 50px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 24px;
+                    border: 1px solid #fff;
+                }
+            }
+
+            .movie-duration-details {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                padding-top: 10px;
+
+                .movie-duration {
+                    font-size: 1.3rem;
+                    color: $icon-color;
+                }
+
+                .movie-release-year {
+                    font-size: 1.3rem;
+                    color: $icon-color;
+                }
+            }
+
+            .movie-details {
+                margin: 0;
+                padding-top: 10px;
+                font-family: inherit;
+                color: $secondary-color;
+                font-size: 1.3rem;
+            }
+
+            .movie-details strong {
+                font-weight: bold;
+            }
+
+
+
+            .number {
+                display: inline-block;
+            }
+        }
+    }
+
+    .close-movie-details {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
